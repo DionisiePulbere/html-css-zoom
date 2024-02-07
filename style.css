@@ -1,9 +1,37 @@
 /* ------------------------
     RESET
 ------------------------ */
-
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+}
+
+/* ------------------------
+    GENERAL
+------------------------ */
+body{
+    background-color: black;
+    color: white;
+}
+
+/* ------------------------
+    HEADER
+------------------------ */
+.container{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 12px;
+    margin-right: 10px;
+}
+
+.btn{
+    color: white;
+    background-color: #4A4A4A;
+    font-size: 12px;
+    border-radius: 4px;
+    padding: 2px 4px;
+    cursor: pointer;
+    
+    
 }
