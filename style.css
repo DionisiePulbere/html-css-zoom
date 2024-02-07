@@ -13,12 +13,23 @@
 body{
     background-color: black;
     color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container{
+    display: flex;
 }
 
 /* ------------------------
     HEADER
 ------------------------ */
-.container{
+header{
+    min-height: 34px;
+    position: relative;
+}
+header .container{
+    width: 100vw;
+    position: fixed;
     display: flex;
     justify-content: flex-end;
     margin-top: 12px;
@@ -32,6 +43,90 @@ body{
     border-radius: 4px;
     padding: 2px 4px;
     cursor: pointer;
-    
-    
+}
+
+/* ------------------------
+    MAIN
+------------------------ */
+main{
+    height: calc(100vh -114px);
+    overflow-y: auto;
+}
+
+main .container{
+    padding: 40px 90px;
+    max-width: 1960px;
+    flex-wrap: wrap;
+}
+
+.participant img{
+    padding: 4px 2px;
+}
+
+/* ------------------------
+    FOOTER
+------------------------ */
+
+footer{
+    min-height: 80px;
+    background-color: #222222;
+    position: relative;
+}
+
+footer .container{
+    position: sticky;
+    width: 100vw;
+    bottom: 0;
+    left: 0;
+    justify-content: space-between;
+}
+
+.container-set{
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.container-tool{
+    transform: translate(-6% , 13%);
+}
+
+footer ul{
+    display: flex;
+    list-style: none;
+}
+
+footer li{
+    text-align: center;
+    margin: 0 20px;
+    position: relative;
+}
+.arrow{
+    position: absolute;
+    right: -20px;
+    top: 16px;
+}
+
+.set .arrow i{
+    font-size: 10px;
+}
+.set i{
+    font-size: 30px;
+    padding-bottom: 6px;
+}
+
+ul li.set:nth-child(4) i:first-child{
+    color: lime;
+}
+
+h5{
+    font-weight: 300;
+    text-decoration: none;
+
+}
+
+.btn-end{
+    font-weight: 600;
+    color: red;
+    border-radius: 0;
+    padding: 30px;
 }
